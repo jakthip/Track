@@ -2,25 +2,36 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>K-Track Hub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>K-Trak Hub</title>
 
-    <!-- Favicon สำหรับ Desktop/Mobile -->
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
     <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
 
-    <!-- Icon สำหรับ iOS -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 
-    <!-- Icon สำหรับ Android/Chrome -->
     <link rel="manifest" href="site.webmanifest">
 
-    <!-- Theme color สำหรับมือถือ -->
-    <meta name="theme-color" content="#ff6600">
+    <meta name="theme-color" content="#4f46e5">
+
+    <style>
+        /* ลบขอบขาวรอบหน้าจอและล็อคไม่ให้หน้าเว็บหลักเลื่อนได้ */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* ป้องกันแถบ Scrollbar ซ้อนกัน */
+            background-color: #f1f5f9;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-    <iframe style="width: 100%; height: 100vh;" scrolling="yes"
-        src="https://script.google.com/macros/s/AKfycbxIaXrq6B9hHOzW6KriM98dU_bG3ZClmT6wz-wndkxQ-4S7CxTRSrYH68yqjQDjOmht/exec"
-        frameborder="0"></iframe>
+    <iframe src="https://script.google.com/macros/s/AKfycbxIaXrq6B9hHOzW6KriM98dU_bG3ZClmT6wz-wndkxQ-4S7CxTRSrYH68yqjQDjOmht/exec"></iframe>
 </body>
 </html>
